@@ -1,0 +1,38 @@
+To install dependencies run 'npm install' on the terminal
+
+To run the program on port 3000 run 'npm start'
+
+sample api requests
+
+for getting the rate with respest to the indian ruppee
+1. http://localhost:3000/api/currencyRate/?currencyCode=ARS
+2. http://localhost:3000/api/currencyRate/?currencyCode=MAD
+
+sample output
+{
+    "rate": 0.135413,
+    "currencyCode": "MAD"
+}
+
+for bitcoin data based on user provided currency code
+
+1. http://localhost:3000/api/getData/?currencyCode=MAD
+2. http://localhost:3000/api/getData/?currencyCode=ARS
+
+sample output
+
+{
+    "btc": {
+        "symbol": "btcinr",
+        "baseAsset": "btc",
+        "quoteAsset": "ARS",
+        "openPrice": 3302695.790252,
+        "lowPrice": 3051158.3000000003,
+        "highPrice": 3340933.982947,
+        "lastPrice": 3114830.589324,
+        "volume": "12.32715",
+        "bidPrice": 3110386.667,
+        "askPrice": 3122639.759773,
+        "at": 1663147489000
+    }
+}
